@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Path Finder Visualizer</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+    <h1>Path Finder Visualizer</h1>
+
+    <div class="controls">
+
+    <select id="algo">
+        <option value="bfs">BFS</option>
+        <option value="dfs">DFS</option>
+    </select>
+
+    <button id="runBtn">Run BFS</button>
+    <button id="resetBtn">Reset</button>
+    <button id="mazeBtn">Generate Maze</button>
+    
+
+</div>
+
+<div class="legend">
+    🟩 Start
+    🟥 End
+    ⬛ Wall
+    🟦 Visited
+    🟨 Path
+</div>
+
+<div id="stats">
+    <span>Algorithm: <b id="algoName">BFS</b></span>
+    <span>Visited: <b id="visitedCount">0</b></span>
+    <span>Path Length: <b id="pathLength">0</b></span>
+    <span>Status: <b id="status">Ready</b></span>
+</div>
+
+<div class="main-container">
+
+    <div class="instructions">
+        <h3>Instructions</h3>
+        <ol>
+            <li>Click a cell to set Start Node</li>
+            <li>Click another cell to set End Node</li>
+            <li>Click cells to create Walls</li>
+            <li>Or use Generate Maze</li>
+            <li>Select BFS / DFS</li>
+            <li>Click Run Algorithm</li>
+            <li>Blue = Visited Nodes</li>
+            <li>Yellow = Final Path</li>
+            <li>Reset to start again</li>
+        </ol>
+    </div>
+
+</div>
+
+    <div id="grid"></div>
+
+    <p class="footer">Built by Mahendra Singh 🚀</p>
+
+    <script src="/script.js"></script>
+</body>
+</html>

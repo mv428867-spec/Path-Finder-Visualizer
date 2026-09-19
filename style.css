@@ -1,0 +1,153 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family:Arial, sans-serif;
+    background: linear-gradient(135deg,#c6b45c,#6382ac,#babfc2);
+}
+
+h1{
+    text-align: center;
+    font-size:60px;
+    margin-bottom:30px;
+    color:#222;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(90deg,#0b0c0d,#1c0d08);
+    background-clip: text;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+.controls{
+    display:flex;
+    gap:15px;
+    margin-bottom:25px;
+    align-items:center;
+}
+
+#grid{
+    display: grid;
+    grid-template-columns: repeat(20,30px);
+    gap: 2px;
+    padding:20px;
+    background:white;
+    border-radius:15px;
+    box-shadow:0 8px 25px rgba(0,0,0,0.15);
+}
+
+select{
+    padding:10px 15px;
+    font-size:18px;
+    border-radius:8px;
+    border:none;
+    box-shadow:0 2px 8px rgba(0,0,0,0.15);
+    cursor:pointer;
+}
+
+.cell{
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+}
+
+.cell:hover{
+    transform:scale(1.05);
+}
+
+.wall{
+    background-color: black;
+}
+.start{
+    background-color: green;
+}
+
+.end{
+    background-color: red;
+}
+
+button{
+    padding:12px 25px;
+    font-size:18px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    transition:0.3s;
+    box-shadow:0 2px 8px rgba(0,0,0,0.2);
+}
+
+.visited{
+    background-color: #3abef2;
+}
+
+.path{
+    background-color: rgb(231, 231, 19);
+}
+#runBtn{
+    background:#4CAF50;
+    color:white;
+}
+
+#runBtn:hover{
+    transform:scale(1.05);
+}
+
+#resetBtn{
+    background:#f13636;
+    color:white;
+}
+
+#resetBtn:hover{
+    transform:scale(1.05);
+}
+
+.footer{
+    margin-top:20px;
+    margin-bottom:20px;
+    color:#333;
+    font-size:14px;
+}
+
+.legend{
+    margin:15px;
+    font-size:18px;
+    font-weight:bold;
+}
+
+.main-container{
+    display:flex;
+    justify-content:center;
+    width:100%;
+}
+
+.instructions{
+    position:fixed;
+    left:30px;
+    top:300px;
+    width:250px;
+    background:white; 
+    padding:20px; 
+    border-radius:15px; 
+    box-shadow:0 5px 15px rgba(0,0,0,0.15);
+}
+
+.instructions h3{
+    margin-top:0;
+}
+
+.instructions li{
+    margin-bottom:10px;
+}
+
+#stats{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:30px;          /* spacing between items */
+    margin:15px 0;
+    font-size:18px;
+    font-weight:normal;
+}
+#stats span{
+    display:flex;
+    gap:5px;
+}
