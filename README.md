@@ -6,6 +6,14 @@ Live Demo
 
 🌐 https://mv428867-spec.github.io/Path-Finder-Visualizer/
 
+## Screenshots
+
+### BFS Visualization
+![BFS Screenshot](screenshot%20BFS.png)
+
+### DFS Visualization
+![DFS Screenshot](screenshot%20DFS.png)
+
 Features
 BFS (Breadth First Search) Visualization
 DFS (Depth First Search) Visualization
